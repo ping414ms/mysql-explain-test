@@ -30,10 +30,10 @@ table products {
   code varchar
   name varchar
   price float
-  categorie_id bigint [not null]
+  category_id bigint [not null]
 }
 
-ref: "categories"."id" < "products"."categorie_id"
+ref: "categories"."id" < "products"."category_id"
 
 table sales {
   id bigint [pk, not null, increment]
